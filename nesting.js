@@ -180,17 +180,17 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-function looper(numsArr){
+function looper(){
  for(let i = 0; i < numsArr.length; i++){
    for(let k = 0; k< numsArr[i].length; k++){
      if(numsArr[i][k] % 2 === 0){
        numsArr[i][k] = 'even'
-     } else {
+     } else if(numsArr[i][k] % 2 === 1){
        numsArr[i][k] = 'odd'
      }
    }
  }
  return numsArr
 }
-console.log(looper(numsArr))
+console.log(looper())
 
